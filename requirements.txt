@@ -1,0 +1,28 @@
+# Bundesliga Scraper Pro - Requirements
+# Core Web Scraping
+httpx==0.25.2
+beautifulsoup4==4.12.2
+lxml==4.9.3
+requests==2.31.0
+
+# Data Processing & Export
+pandas==2.1.4
+openpyxl==3.1.2
+python-dateutil==2.8.2
+
+# GUI Frameworks
+streamlit==1.28.2
+tkinter-tooltip==2.1.0
+ttkbootstrap==1.10.1
+
+# Async & File Handling
+asyncio
+aiofiles==23.2.1
+
+# Packaging & Distribution
+pyinstaller==6.3.0
+
+# Utilities
+pathlib
+dataclasses
+typing-extensions==4.8.0

@@ -1,0 +1,624 @@
+{
+  "1963_kaiserslautern_vs_koeln-1963-bundesliga": {
+    "metadata": {
+      "year": "1963",
+      "title": "Spielschema | Vorwärts Steyr - Union Gurten 1:1 | 28. Spieltag | Regionalliga Mitte 2023/24 - kicker",
+      "teams": [
+        "kaiserslautern",
+        "koeln-1963-bundesliga"
+      ],
+      "url": "https://www.kicker.de/kaiserslautern-gegen-koeln-1963-bundesliga-4869397/schema"
+    },
+    "goals": {
+      "url": "https://www.kicker.de/kaiserslautern-gegen-koeln-1963-bundesliga-4869397/schema",
+      "goal_methods": {
+        "kick__goals__player": {
+          "count": 2,
+          "samples": [
+            "F. WimmleitnerF. Wimmleitner",
+            "M. ZiricM. Ziric"
+          ]
+        },
+        "goal_score_classes": {
+          "count": 4,
+          "classes": [
+            "['kick__v100-scoreBoard', 'kick__v100-scoreBoard--standard', 'kick__v100-scoreBoard--goals__score']",
+            "['kick__goals__score']"
+          ]
+        }
+      },
+      "timeline_structure": {},
+      "goal_elements": [
+        "ov.checkLocalStorage=()=>{try{return window.localStorage.getItem(\"x\"),!0}catch(e){return!1}},ov.getT",
+        "ov.cmp={isConsentGiven:!1,tcData:null,isDomLoaded:!1},ov.cmp.init=()=>{if(ov.logger.debug(\"ov.cmp.in",
+        "window.tp=window.tp||[],window.pdl=window.pdl||{},window.pdl.requireConsent=\"v2\",window.pdl.consent=",
+        "ov.AppPlatform=\"\",ov.AppDarkMode=!1,ov.AppTablet=!1,ov.AppComments=!1,ov.AppLocationHash=\"\",ov.AppHa",
+        "window.ovCountryLayerTimeout=void 0,ov.portalRedirect={layerVisible:!1,init:function(){1!=ov.isAppWe"
+      ]
+    },
+    "lineups": {
+      "url": "https://www.kicker.de/kaiserslautern-gegen-koeln-1963-bundesliga-4869397/schema",
+      "lineup_methods": {
+        "kick__lineup__team": {
+          "count": 2,
+          "team_count": 2
+        },
+        "kick__lineup_text": {
+          "count": 2,
+          "sample_content": [
+            "\nA. MaricA. PasicB. Lukic M. Kabashaj M. MarticM. SulejmanovicM. Ziric Martin Coello  O. FilipV. HüttnerVivito \n",
+            "\nD. BauerF. Wimmleitner J. KreuzerM. PavliR. Wirth S. MurauerS. SchnaitterS. Zirnitzer T. BurghuberT. PoriT. Schott\n"
+          ]
+        },
+        "player_links": {
+          "count": 12,
+          "sample_names": [
+            "A. Maric",
+            "M. Martic",
+            "M. Sulejmanovic",
+            "O. Filip",
+            "V. Hüttner",
+            "J. Kreuzer",
+            "D. Bilic",
+            "Fauland",
+            "P. Bilic",
+            "Schlosser"
+          ]
+        },
+        "aufstellung_classes": {
+          "count": 13,
+          "classes": [
+            "['kick__data-grid', 'kick__data-grid--half-r-s', 'kick__lineup', 'kick__lineup--player']",
+            "['kick__lineup__team', 'kick__lineup__team--left']",
+            "['kick__lineup-text']",
+            "['kick__lineup-text__unorderedList']",
+            "['kick__lineup-text__headline', 'kick__lineup-text__headline--hide-desktop']"
+          ]
+        }
+      },
+      "player_patterns": {
+        "ratings": {
+          "count": 1,
+          "samples": [
+            [
+              "Nur",
+              "2,49"
+            ]
+          ]
+        }
+      },
+      "formation_elements": []
+    }
+  },
+  "1963_muenchen_vs_braunschweig-1963-bundesliga": {
+    "metadata": {
+      "year": "1963",
+      "title": "Spielschema | TSV 1860 München - Eintracht Braunschweig 1:1 | 1. Spieltag | Bundesliga 1963/64 - kicker",
+      "teams": [
+        "muenchen",
+        "braunschweig-1963-bundesliga"
+      ],
+      "url": "https://www.kicker.de/muenchen-gegen-braunschweig-1963-bundesliga-20087/schema"
+    },
+    "goals": {
+      "url": "https://www.kicker.de/muenchen-gegen-braunschweig-1963-bundesliga-20087/schema",
+      "goal_methods": {
+        "kick__goals__player": {
+          "count": 0,
+          "samples": []
+        },
+        "goal_score_classes": {
+          "count": 4,
+          "classes": [
+            "['kick__v100-scoreBoard', 'kick__v100-scoreBoard--standard', 'kick__v100-scoreBoard--goals__score']",
+            "['kick__goals__score']"
+          ]
+        }
+      },
+      "timeline_structure": {},
+      "goal_elements": [
+        "ov.checkLocalStorage=()=>{try{return window.localStorage.getItem(\"x\"),!0}catch(e){return!1}},ov.getT",
+        "ov.cmp={isConsentGiven:!1,tcData:null,isDomLoaded:!1},ov.cmp.init=()=>{if(ov.logger.debug(\"ov.cmp.in",
+        "window.tp=window.tp||[],window.pdl=window.pdl||{},window.pdl.requireConsent=\"v2\",window.pdl.consent=",
+        "ov.AppPlatform=\"\",ov.AppDarkMode=!1,ov.AppTablet=!1,ov.AppComments=!1,ov.AppLocationHash=\"\",ov.AppHa",
+        "window.ovCountryLayerTimeout=void 0,ov.portalRedirect={layerVisible:!1,init:function(){1!=ov.isAppWe"
+      ]
+    },
+    "lineups": {
+      "url": "https://www.kicker.de/muenchen-gegen-braunschweig-1963-bundesliga-20087/schema",
+      "lineup_methods": {
+        "kick__lineup__team": {
+          "count": 4,
+          "team_count": 4
+        },
+        "kick__lineup_text": {
+          "count": 4,
+          "sample_content": [
+            "\nRadenkovicMan. WagnerR. SteinerZeiserStemmerLuttropKüppersP. GrosserHeißBrunnenmeier Thommes\n",
+            "\nJäckerBraseK. MeyerW. SchmidtKaackBäseSchraderHosungGerwien MollDulz\n"
+          ]
+        },
+        "player_links": {
+          "count": 24,
+          "sample_names": [
+            "BrunnenmeierBrunnenmeier",
+            "GerwienGerwien",
+            "Radenkovic",
+            "Man. Wagner",
+            "R. Steiner",
+            "Zeiser",
+            "Stemmer",
+            "Luttrop",
+            "Küppers",
+            "P. Grosser"
+          ]
+        },
+        "aufstellung_classes": {
+          "count": 24,
+          "classes": [
+            "['kick__data-grid', 'kick__data-grid--half-r-s', 'kick__lineup', 'kick__lineup--player']",
+            "['kick__lineup__team', 'kick__lineup__team--left']",
+            "['kick__lineup-text']",
+            "['kick__lineup-text__unorderedList']",
+            "['kick__lineup-text__headline', 'kick__lineup-text__headline--hide-desktop']"
+          ]
+        }
+      },
+      "player_patterns": {
+        "ratings": {
+          "count": 1,
+          "samples": [
+            [
+              "Nur",
+              "2,49"
+            ]
+          ]
+        }
+      },
+      "formation_elements": []
+    }
+  },
+  "1970_moenchengladbach_vs_koeln-1970-bundesliga": {
+    "metadata": {
+      "year": "1970",
+      "title": "Spielschema | Metalist 1925 Charkiw - LNZ Tscherkassy 1:1 | 20. Spieltag | Premjer-Liha 2023/24 - kicker",
+      "teams": [
+        "moenchengladbach",
+        "koeln-1970-bundesliga"
+      ],
+      "url": "https://www.kicker.de/moenchengladbach-gegen-koeln-1970-bundesliga-4869858/schema"
+    },
+    "goals": {
+      "url": "https://www.kicker.de/moenchengladbach-gegen-koeln-1970-bundesliga-4869858/schema",
+      "goal_methods": {
+        "kick__goals__player": {
+          "count": 0,
+          "samples": []
+        },
+        "goal_score_classes": {
+          "count": 4,
+          "classes": [
+            "['kick__v100-scoreBoard', 'kick__v100-scoreBoard--standard', 'kick__v100-scoreBoard--goals__score']",
+            "['kick__goals__score']"
+          ]
+        }
+      },
+      "timeline_structure": {
+        "length": 1025,
+        "has_spielminute": true,
+        "has_minute_pattern": true,
+        "sample_text": "\n\n\n\n\n\n14:44 - 10. SpielminuteGelbe Karte (Metalist 1925)YurchenkoMetalist 192515:20 - 45. + 1 SpielminuteGelbe Karte (Tscherkassy)BarTscherkassy15:38 - 46. SpielminuteSpielerwechsel Shestakovfür O. Th"
+      },
+      "goal_elements": [
+        "ov.checkLocalStorage=()=>{try{return window.localStorage.getItem(\"x\"),!0}catch(e){return!1}},ov.getT",
+        "ov.cmp={isConsentGiven:!1,tcData:null,isDomLoaded:!1},ov.cmp.init=()=>{if(ov.logger.debug(\"ov.cmp.in",
+        "window.tp=window.tp||[],window.pdl=window.pdl||{},window.pdl.requireConsent=\"v2\",window.pdl.consent=",
+        "ov.AppPlatform=\"\",ov.AppDarkMode=!1,ov.AppTablet=!1,ov.AppComments=!1,ov.AppLocationHash=\"\",ov.AppHa",
+        "window.ovCountryLayerTimeout=void 0,ov.portalRedirect={layerVisible:!1,init:function(){1!=ov.isAppWe"
+      ]
+    },
+    "lineups": {
+      "url": "https://www.kicker.de/moenchengladbach-gegen-koeln-1970-bundesliga-4869858/schema",
+      "lineup_methods": {
+        "kick__lineup__team": {
+          "count": 4,
+          "team_count": 4
+        },
+        "kick__lineup_text": {
+          "count": 4,
+          "sample_content": [
+            "\nY. ProtsenkoD. KapinusImerekovV. ChervakFarynaGabelokAri MouraK. Bychek Yurchenko   Boryachuk Garmash\n",
+            "\nH. PenkovO. NasonovN. MuravskyiSalihuKaplienkoO. Thill Rybalka   Bar Jashari Bessala H. Pasich\n"
+          ]
+        },
+        "player_links": {
+          "count": 53,
+          "sample_names": [
+            "Yurchenko",
+            "Bar",
+            "Shestakov",
+            "O. Thill",
+            "Rybalka",
+            "Khoblenko",
+            "Bessala",
+            "Khoblenko",
+            "Oliinyk",
+            "Jashari"
+          ]
+        },
+        "aufstellung_classes": {
+          "count": 28,
+          "classes": [
+            "['kick__data-grid', 'kick__data-grid--half-r-s', 'kick__lineup', 'kick__lineup--player']",
+            "['kick__lineup__team', 'kick__lineup__team--left']",
+            "['kick__lineup-text']",
+            "['kick__lineup-text__unorderedList']",
+            "['kick__lineup-text__headline', 'kick__lineup-text__headline--hide-desktop']"
+          ]
+        }
+      },
+      "player_patterns": {
+        "ratings": {
+          "count": 1,
+          "samples": [
+            [
+              "Nur",
+              "2,49"
+            ]
+          ]
+        }
+      },
+      "formation_elements": []
+    }
+  },
+  "2001_bayern_vs_dortmund-2001-bundesliga": {
+    "metadata": {
+      "year": "2001",
+      "title": "Spielschema | BG Pathum United FC - Port FC 1:3 | 26. Spieltag | Thai-Liga 2023/24 - kicker",
+      "teams": [
+        "bayern",
+        "dortmund-2001-bundesliga"
+      ],
+      "url": "https://www.kicker.de/bayern-gegen-dortmund-2001-bundesliga-4871241/schema"
+    },
+    "goals": {
+      "url": "https://www.kicker.de/bayern-gegen-dortmund-2001-bundesliga-4871241/schema",
+      "goal_methods": {
+        "kick__goals__player": {
+          "count": 1,
+          "samples": [
+            "Felipe AmorimFelipe Amorim"
+          ]
+        },
+        "goal_score_classes": {
+          "count": 8,
+          "classes": [
+            "['kick__v100-scoreBoard', 'kick__v100-scoreBoard--standard', 'kick__v100-scoreBoard--goals__score']",
+            "['kick__goals__score']"
+          ]
+        }
+      },
+      "timeline_structure": {
+        "length": 1339,
+        "has_spielminute": true,
+        "has_minute_pattern": true,
+        "sample_text": "\n\n\n\n\n\n15:17 - 15. SpielminuteTor 1:0AlvarezElfmeterPathum United15:28 - 26. SpielminuteGelbe Karte (Port FC)Felipe AmorimPort FC15:30 - 27. SpielminuteTor 1:1TardeliVorbereitung KanitsribumphenPort FC"
+      },
+      "goal_elements": [
+        "ov.checkLocalStorage=()=>{try{return window.localStorage.getItem(\"x\"),!0}catch(e){return!1}},ov.getT",
+        "ov.cmp={isConsentGiven:!1,tcData:null,isDomLoaded:!1},ov.cmp.init=()=>{if(ov.logger.debug(\"ov.cmp.in",
+        "window.tp=window.tp||[],window.pdl=window.pdl||{},window.pdl.requireConsent=\"v2\",window.pdl.consent=",
+        "ov.AppPlatform=\"\",ov.AppDarkMode=!1,ov.AppTablet=!1,ov.AppComments=!1,ov.AppLocationHash=\"\",ov.AppHa",
+        "window.ovCountryLayerTimeout=void 0,ov.portalRedirect={layerVisible:!1,init:function(){1!=ov.isAppWe"
+      ]
+    },
+    "lineups": {
+      "url": "https://www.kicker.de/bayern-gegen-dortmund-2001-bundesliga-4871241/schema",
+      "lineup_methods": {
+        "kick__lineup__team": {
+          "count": 4,
+          "team_count": 4
+        },
+        "kick__lineup_text": {
+          "count": 4,
+          "sample_content": [
+            "\nP. DokmaikeawChanngomIrfan Fandi PraisuwanW. Sawatlakhorn  Alvarez Sukjitthammakul KamanA. Sorada Danilo Alves Yooyen\n",
+            "\nS. YosAukkeePutros Shimura  BureeratKanitsribumphen T. KesaratDeeromramFelipe Amorim   Tardeli   Phala \n"
+          ]
+        },
+        "player_links": {
+          "count": 52,
+          "sample_names": [
+            "Alvarez",
+            "Tardeli",
+            "Kanitsribumphen",
+            "Deeromram",
+            "Tardeli",
+            "Songkrasin",
+            "Sukjitthammakul",
+            "Dangda",
+            "Poeiphimai",
+            "Kanitsribumphen"
+          ]
+        },
+        "aufstellung_classes": {
+          "count": 28,
+          "classes": [
+            "['kick__data-grid', 'kick__data-grid--half-r-s', 'kick__lineup', 'kick__lineup--player']",
+            "['kick__lineup__team', 'kick__lineup__team--left']",
+            "['kick__lineup-text']",
+            "['kick__lineup-text__unorderedList']",
+            "['kick__lineup-text__headline', 'kick__lineup-text__headline--hide-desktop']"
+          ]
+        }
+      },
+      "player_patterns": {
+        "ratings": {
+          "count": 1,
+          "samples": [
+            [
+              "Nur",
+              "2,49"
+            ]
+          ]
+        }
+      },
+      "formation_elements": []
+    }
+  },
+  "2012_bayern_vs_dortmund-2012-bundesliga": {
+    "metadata": {
+      "year": "2012",
+      "title": "Spielschema | Montpellier HB - GOG Svendborg TGI 36:25 | Vorrunde, 10. Spieltag | Champions League Männer 2023/24 - kicker",
+      "teams": [
+        "bayern",
+        "dortmund-2012-bundesliga"
+      ],
+      "url": "https://www.kicker.de/bayern-gegen-dortmund-2012-bundesliga-4871702/schema"
+    },
+    "goals": {
+      "url": "https://www.kicker.de/bayern-gegen-dortmund-2012-bundesliga-4871702/schema",
+      "goal_methods": {
+        "kick__goals__player": {
+          "count": 0,
+          "samples": []
+        },
+        "goal_score_classes": {
+          "count": 0,
+          "classes": []
+        }
+      },
+      "timeline_structure": {},
+      "goal_elements": [
+        "ov.checkLocalStorage=()=>{try{return window.localStorage.getItem(\"x\"),!0}catch(e){return!1}},ov.getT",
+        "ov.cmp={isConsentGiven:!1,tcData:null,isDomLoaded:!1},ov.cmp.init=()=>{if(ov.logger.debug(\"ov.cmp.in",
+        "window.tp=window.tp||[],window.pdl=window.pdl||{},window.pdl.requireConsent=\"v2\",window.pdl.consent=",
+        "ov.AppPlatform=\"\",ov.AppDarkMode=!1,ov.AppTablet=!1,ov.AppComments=!1,ov.AppLocationHash=\"\",ov.AppHa",
+        "window.ovCountryLayerTimeout=void 0,ov.portalRedirect={layerVisible:!1,init:function(){1!=ov.isAppWe"
+      ]
+    },
+    "lineups": {
+      "url": "https://www.kicker.de/bayern-gegen-dortmund-2012-bundesliga-4871702/schema",
+      "lineup_methods": {
+        "kick__lineup__team": {
+          "count": 0,
+          "team_count": 0
+        },
+        "kick__lineup_text": {
+          "count": 0,
+          "sample_content": []
+        },
+        "player_links": {
+          "count": 0,
+          "sample_names": []
+        },
+        "aufstellung_classes": {
+          "count": 0,
+          "classes": []
+        }
+      },
+      "player_patterns": {
+        "ratings": {
+          "count": 1,
+          "samples": [
+            [
+              "Nur",
+              "2,49"
+            ]
+          ]
+        }
+      },
+      "formation_elements": []
+    }
+  },
+  "2024_moenchengladbach_vs_leverkusen-2024-bundesliga": {
+    "metadata": {
+      "year": "2024",
+      "title": "Spielschema | Brommapojkarna IF - BK Häcken 0:6 | 12. Spieltag | Damallsvenskan 2023 - kicker",
+      "teams": [
+        "moenchengladbach",
+        "leverkusen-2024-bundesliga"
+      ],
+      "url": "https://www.kicker.de/moenchengladbach-gegen-leverkusen-2024-bundesliga-4831415/schema"
+    },
+    "goals": {
+      "url": "https://www.kicker.de/moenchengladbach-gegen-leverkusen-2024-bundesliga-4831415/schema",
+      "goal_methods": {
+        "kick__goals__player": {
+          "count": 4,
+          "samples": [
+            "R. KafajiR. Kafaji",
+            "R. KafajiR. Kafaji",
+            "R. GrantR. Grant"
+          ]
+        },
+        "goal_score_classes": {
+          "count": 12,
+          "classes": [
+            "['kick__v100-scoreBoard', 'kick__v100-scoreBoard--standard', 'kick__v100-scoreBoard--goals__score']",
+            "['kick__goals__score']"
+          ]
+        }
+      },
+      "timeline_structure": {
+        "length": 1143,
+        "has_spielminute": true,
+        "has_minute_pattern": true,
+        "sample_text": "\n\n\n\n\n\n13:11 - 12. SpielminuteTor 0:1AnvegardHäcken13:13 - 14. SpielminuteTor 0:2R. KafajiHäcken13:16 - 17. SpielminuteTor 0:3R. KafajiHäcken14:03 - 46. SpielminuteSpielerwechsel R. Grantfür F. Curmark"
+      },
+      "goal_elements": [
+        "ov.checkLocalStorage=()=>{try{return window.localStorage.getItem(\"x\"),!0}catch(e){return!1}},ov.getT",
+        "ov.cmp={isConsentGiven:!1,tcData:null,isDomLoaded:!1},ov.cmp.init=()=>{if(ov.logger.debug(\"ov.cmp.in",
+        "window.tp=window.tp||[],window.pdl=window.pdl||{},window.pdl.requireConsent=\"v2\",window.pdl.consent=",
+        "ov.AppPlatform=\"\",ov.AppDarkMode=!1,ov.AppTablet=!1,ov.AppComments=!1,ov.AppLocationHash=\"\",ov.AppHa",
+        "window.ovCountryLayerTimeout=void 0,ov.portalRedirect={layerVisible:!1,init:function(){1!=ov.isAppWe"
+      ]
+    },
+    "lineups": {
+      "url": "https://www.kicker.de/moenchengladbach-gegen-leverkusen-2024-bundesliga-4831415/schema",
+      "lineup_methods": {
+        "kick__lineup__team": {
+          "count": 2,
+          "team_count": 2
+        },
+        "kick__lineup_text": {
+          "count": 2,
+          "sample_content": [
+            "\nE. Karlsson E. Toivio F. Boriero F. Hjelm-RönnlundF. WallénI. BengtssonK. Andrup N. PerssonS. OlaiS. Swedman W. Wärulf \n",
+            "\nM. Bergman-LundinF. Curmark E. Junttila-NelhageR. Kafaji   C. Laris­ey  J. RybrinkH. WijkAnvegard  Blakstad FalkLuik \n"
+          ]
+        },
+        "player_links": {
+          "count": 13,
+          "sample_names": [
+            "Anvegard",
+            "Blakstad",
+            "Anvegard",
+            "Luik",
+            "AnvegardAnvegard",
+            "AnvegardAnvegard",
+            "Anvegard",
+            "Blakstad",
+            "Falk",
+            "Luik"
+          ]
+        },
+        "aufstellung_classes": {
+          "count": 13,
+          "classes": [
+            "['kick__data-grid', 'kick__data-grid--half-r-s', 'kick__lineup', 'kick__lineup--player']",
+            "['kick__lineup__team', 'kick__lineup__team--left']",
+            "['kick__lineup-text']",
+            "['kick__lineup-text__unorderedList']",
+            "['kick__lineup-text__headline', 'kick__lineup-text__headline--hide-desktop']"
+          ]
+        }
+      },
+      "player_patterns": {
+        "ratings": {
+          "count": 1,
+          "samples": [
+            [
+              "Nur",
+              "2,49"
+            ]
+          ]
+        }
+      },
+      "formation_elements": []
+    }
+  },
+  "2023_bayern_vs_dortmund-2023-bundesliga": {
+    "metadata": {
+      "year": "2023",
+      "title": "Spielschema | FC Rosengard - Kristianstads DFF 2:0 | 6. Spieltag | Damallsvenskan 2023 - kicker",
+      "teams": [
+        "bayern",
+        "dortmund-2023-bundesliga"
+      ],
+      "url": "https://www.kicker.de/bayern-gegen-dortmund-2023-bundesliga-4831376/schema"
+    },
+    "goals": {
+      "url": "https://www.kicker.de/bayern-gegen-dortmund-2023-bundesliga-4831376/schema",
+      "goal_methods": {
+        "kick__goals__player": {
+          "count": 0,
+          "samples": []
+        },
+        "goal_score_classes": {
+          "count": 4,
+          "classes": [
+            "['kick__v100-scoreBoard', 'kick__v100-scoreBoard--standard', 'kick__v100-scoreBoard--goals__score']",
+            "['kick__goals__score']"
+          ]
+        }
+      },
+      "timeline_structure": {
+        "length": 760,
+        "has_spielminute": true,
+        "has_minute_pattern": true,
+        "sample_text": "\n\n\n\n\n\n18:39 - 40. SpielminuteTor 1:0SchoughRosengard18:44 - 45. SpielminuteTor 2:0SchoughRosengard19:01 - 46. SpielminuteSpielerwechsel J. Brewsterfür van den BulkKristianstad19:01 - 46. SpielminuteSp"
+      },
+      "goal_elements": [
+        "ov.checkLocalStorage=()=>{try{return window.localStorage.getItem(\"x\"),!0}catch(e){return!1}},ov.getT",
+        "ov.cmp={isConsentGiven:!1,tcData:null,isDomLoaded:!1},ov.cmp.init=()=>{if(ov.logger.debug(\"ov.cmp.in",
+        "window.tp=window.tp||[],window.pdl=window.pdl||{},window.pdl.requireConsent=\"v2\",window.pdl.consent=",
+        "ov.AppPlatform=\"\",ov.AppDarkMode=!1,ov.AppTablet=!1,ov.AppComments=!1,ov.AppLocationHash=\"\",ov.AppHa",
+        "window.ovCountryLayerTimeout=void 0,ov.portalRedirect={layerVisible:!1,init:function(){1!=ov.isAppWe"
+      ]
+    },
+    "lineups": {
+      "url": "https://www.kicker.de/bayern-gegen-dortmund-2023-bundesliga-4831376/schema",
+      "lineup_methods": {
+        "kick__lineup__team": {
+          "count": 2,
+          "team_count": 2
+        },
+        "kick__lineup_text": {
+          "count": 2,
+          "sample_content": [
+            "\nÖlingI. ObazeE. Larsson ArnardottirAyinde BerglundBredgaard LundinMukasaSchough    Wik\n",
+            "\nA. AndradottirA. NilssonC. Wickenheiser E. PetrovicE. ViensH. EiriksdottirJ. HarryssonM. LoeckS. van den BulkT. Persson T. Tindell\n"
+          ]
+        },
+        "player_links": {
+          "count": 36,
+          "sample_names": [
+            "Schough",
+            "Schough",
+            "van den Bulk",
+            "Andradottir",
+            "Persson",
+            "Bredgaard",
+            "Chmielinski",
+            "Ayinde",
+            "Schough",
+            "Schough"
+          ]
+        },
+        "aufstellung_classes": {
+          "count": 13,
+          "classes": [
+            "['kick__data-grid', 'kick__data-grid--half-r-s', 'kick__lineup', 'kick__lineup--player']",
+            "['kick__lineup__team', 'kick__lineup__team--left']",
+            "['kick__lineup-text']",
+            "['kick__lineup-text__unorderedList']",
+            "['kick__lineup-text__headline', 'kick__lineup-text__headline--hide-desktop']"
+          ]
+        }
+      },
+      "player_patterns": {
+        "ratings": {
+          "count": 1,
+          "samples": [
+            [
+              "Nur",
+              "2,49"
+            ]
+          ]
+        }
+      },
+      "formation_elements": []
+    }
+  }
+}

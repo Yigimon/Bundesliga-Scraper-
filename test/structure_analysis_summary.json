@@ -1,0 +1,54 @@
+{
+  "total_games_analyzed": 0,
+  "seasons_covered": [],
+  "lineup_patterns": {
+    "kick__lineup__team": {
+      "games_with_pattern": 0,
+      "avg_elements": 0,
+      "player_counts": [],
+      "avg_players": 0
+    },
+    "table_lineups": {
+      "games_with_pattern": 0,
+      "avg_elements": 0,
+      "player_counts": [],
+      "avg_players": 0
+    },
+    "list_lineups": {
+      "games_with_pattern": 0,
+      "avg_elements": 0,
+      "player_counts": [],
+      "avg_players": 0
+    },
+    "div_lineups": {
+      "games_with_pattern": 0,
+      "avg_elements": 0,
+      "player_counts": [],
+      "avg_players": 0
+    }
+  },
+  "goal_patterns": {
+    "kick__goals": {
+      "games_with_pattern": 0,
+      "avg_elements": 0
+    },
+    "timeline_goals": {
+      "games_with_pattern": 0,
+      "avg_elements": 0
+    },
+    "table_goals": {
+      "games_with_pattern": 0,
+      "avg_elements": 0
+    },
+    "text_goals": {
+      "games_with_pattern": 0,
+      "avg_elements": 0
+    }
+  },
+  "recommendations": [
+    "Primärer Aufstellungs-Selector: kick__lineup__team (in 0 Spielen gefunden)",
+    "Primärer Tor-Selector: kick__goals (in 0 Spielen gefunden)",
+    "Redundante Aufstellungs-Methoden: ['kick__lineup__team', 'table_lineups', 'list_lineups', 'div_lineups']",
+    "Redundante Tor-Methoden: ['kick__goals', 'timeline_goals', 'table_goals', 'text_goals']"
+  ]
+}
