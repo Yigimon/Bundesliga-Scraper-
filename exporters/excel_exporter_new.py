@@ -8,8 +8,24 @@ from models.game_data import GameData
 class ExcelExporter:
     """Exportiert Bundesliga-Daten in Excel-Dateien."""
 
-    def __init__(self):
-        self.output_dir = Path("exports")
+    def __init__(self, output_dir: str = "exports"):
+        """
+        Initialisiert den ExcelExporter.
+
+        Args:
+            output_dir: Pfad zum Ausgabeverzeichnis (Standard: 'exports')
+        """
+        self.output_dir = Path(output_dir)
+        self.output_dir.mkdir(exist_ok=True)
+
+    def set_output_directory(self, output_dir: str):
+        """
+        Setzt ein neues Ausgabeverzeichnis.
+
+        Args:
+            output_dir: Neuer Pfad zum Ausgabeverzeichnis
+        """
+        self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
 
     def export_by_team(self, games: List[GameData], filename: str = None) -> str:

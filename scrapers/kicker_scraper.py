@@ -1096,6 +1096,85 @@ class KickerScraper(BaseScraper):
         print(f"🏆 Gesamt: {len(all_games)} Spiele aus {len(seasons)} Saisons")
         return all_games
 
+    async def batch_download_with_progress(
+        self, seasons: List[str], progress_callback=None
+    ) -> List[GameData]:
+        """Lädt alle Spiele für gegebene Saisons mit Fortschritts-Callbacks"""
+        all_games = []
+        total_games_processed = 0
+        
+        # Sammle alle URLs zuerst, um eine genaue Gesamtzahl zu haben
+        all_season_data = []
+        
+        if progress_callback:
+            progress_callback(0, 1, "Analysiere Saisons...")
+        
+        print(f"� Analysiere {len(seasons)} Saison(en)...")
+        for season in seasons:
+            print(f"🗓️ Lade Spiel-URLs für Saison {season}...")
+            game_urls_with_matchdays = await self.get_season_game_urls(season)
+            if game_urls_with_matchdays:
+                all_season_data.append((season, game_urls_with_matchdays))
+                print(f"   -> {len(game_urls_with_matchdays)} Spiele gefunden")
+            else:
+                print(f"❌ Keine Spiele für Saison {season} gefunden")
+        
+        # Berechne die tatsächliche Gesamtzahl der Spiele
+        total_games = sum(len(urls) for _, urls in all_season_data)
+        print(f"🎯 Insgesamt {total_games} Spiele zu verarbeiten")
+
+        if total_games == 0:
+            if progress_callback:
+                progress_callback(0, 0, "Keine Spiele gefunden")
+            return []
+
+        # Verarbeite alle Spiele
+        for season_idx, (season, game_urls_with_matchdays) in enumerate(all_season_data):
+            print(f"🗓️ Verarbeite Saison {season} ({season_idx + 1}/{len(all_season_data)})...")
+            season_games = []
+
+            # Verarbeite jedes Spiel
+            for i, (url, expected_matchday) in enumerate(game_urls_with_matchdays, 1):
+                total_games_processed += 1
+
+                # Update progress mit genauer Gesamtzahl
+                status = f"Saison {season} - Spiel {i}/{len(game_urls_with_matchdays)} (Spieltag {expected_matchday})"
+                if progress_callback:
+                    progress_callback(total_games_processed, total_games, status)
+
+                print(
+                    f"🔄 Spiel {i}/{len(game_urls_with_matchdays)} (Spieltag {expected_matchday}): ",
+                    end="",
+                )
+
+                game_data = await self.parse_game_detail(url)
+                if game_data:
+                    if not game_data.matchday:
+                        game_data.matchday = expected_matchday
+
+                    season_games.append(game_data)
+                    total_goals = game_data.home_score + game_data.away_score
+                    print(
+                        f"✅ {game_data.home_team.name} {game_data.home_score}:{game_data.away_score} {game_data.away_team.name} (Spieltag {game_data.matchday}, {total_goals} {'Tor' if total_goals == 1 else 'Tore'})"
+                    )
+                else:
+                    print(f"❌ Fehler")
+
+                await asyncio.sleep(self.rate_limit_delay)  # Configurable rate limiting
+
+            all_games.extend(season_games)
+            print(
+                f"🎯 Saison {season} abgeschlossen: {len(season_games)} Spiele erfolgreich"
+            )
+
+        print(f"🏆 Gesamt: {len(all_games)} Spiele aus {len(seasons)} Saisons")
+
+        # Final progress update
+        if progress_callback:
+            progress_callback(len(all_games), len(all_games), "Download abgeschlossen!")
+
+        return all_games
+
     async def get_season_game_urls(self, season: str) -> List[tuple]:
         """Lädt alle Spiel-URLs für eine Saison"""
         season_url = f"https://www.kicker.de/bundesliga/spieltag/{season}/-1"

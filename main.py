@@ -22,21 +22,12 @@ def start_streamlit():
 def start_tkinter():
     """Startet die Tkinter Desktop-GUI"""
     try:
-        from gui.tkinter_app import TkinterApp
-        from scrapers.kicker_scraper import KickerScraper
-        from exporters.excel_exporter_new import ExcelExporter
-        from exporters.merge_service import MergeService
-        from config.speed_config import get_rate_limit_delay
+        from gui.tkinter_app import ModernBundesligaGUI
 
-        # Erstelle Scraper mit konfigurierter Geschwindigkeit
-        scraper = KickerScraper(rate_limit_delay=get_rate_limit_delay())
-
-        app = TkinterApp(
-            scraper=scraper, exporter=ExcelExporter(), merger=MergeService()
-        )
+        app = ModernBundesligaGUI()
         app.run()
-    except ImportError:
-        print("❌ Tkinter-GUI ist noch nicht implementiert!")
+    except ImportError as e:
+        print(f"❌ Fehler beim Starten der Tkinter-GUI: {e}")
         print("Verwenden Sie die Option 1 für die Streamlit Web-GUI.")
 
 
