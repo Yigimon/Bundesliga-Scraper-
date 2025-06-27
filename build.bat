@@ -249,8 +249,8 @@ echo     'config.settings_manager',
 echo ]
 echo.
 echo a = Analysis(
-echo     ['%MAIN_FILE%'],
-echo     pathex=[],
+echo     [r'%MAIN_FILE%'],
+echo     pathex=[r'%cd%'],
 echo     binaries=[],
 echo     datas=datas,
 echo     hiddenimports=hiddenimports,
@@ -286,22 +286,41 @@ echo     argv_emulation=False,
 echo     target_arch=None,
 echo     codesign_identity=None,
 echo     entitlements_file=None,
-echo     icon='%ICON_FILE%',
 echo ^)
 ) > "%SPEC_FILE%"
 echo ✅ Spec-Datei erstellt: %SPEC_FILE%
+
+REM Prüfe ob PyInstaller verfügbar ist
+echo.
+echo 🔍 Prüfe PyInstaller-Installation...
+python -c "import PyInstaller" >nul 2>&1
+if %errorlevel% neq 0 (
+    echo ⚠️  PyInstaller nicht gefunden, installiere...
+    pip install pyinstaller
+    if %errorlevel% neq 0 (
+        echo ❌ PyInstaller-Installation fehlgeschlagen!
+        pause
+        exit /b 1
+    )
+)
+echo ✅ PyInstaller verfügbar
 
 REM Baue die EXE-Datei
 echo.
 echo 🔨 Baue EXE-Datei...
 echo    Dies kann einige Minuten dauern...
-pyinstaller --clean "%SPEC_FILE%"
+python -m PyInstaller --clean "%SPEC_FILE%"
 
 if %errorlevel% neq 0 (
     echo ❌ Build fehlgeschlagen!
-    echo    Prüfe die Ausgabe für Details.
-    pause
-    exit /b 1
+    echo    Versuche alternativen PyInstaller-Aufruf...
+    pyinstaller --clean "%SPEC_FILE%"
+    if %errorlevel% neq 0 (
+        echo ❌ Build definitiv fehlgeschlagen!
+        echo    Prüfe die Ausgabe für Details.
+        pause
+        exit /b 1
+    )
 )
 
 REM Prüfe ob EXE erstellt wurde
