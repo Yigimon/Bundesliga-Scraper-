@@ -287,6 +287,29 @@ echo     target_arch=None,
 echo     codesign_identity=None,
 echo     entitlements_file=None,
 echo ^)
+echo.
+echo # Erstelle auch eine Konsolen-Version für Debug
+echo exe_console = EXE(
+echo     pyz,
+echo     a.scripts,
+echo     a.binaries,
+echo     a.zipfiles,
+echo     a.datas,
+echo     [],
+echo     name='%PROJECT_NAME%_Console',
+echo     debug=False,
+echo     bootloader_ignore_signals=False,
+echo     strip=False,
+echo     upx=True,
+echo     upx_exclude=[],
+echo     runtime_tmpdir=None,
+echo     console=True,
+echo     disable_windowed_traceback=False,
+echo     argv_emulation=False,
+echo     target_arch=None,
+echo     codesign_identity=None,
+echo     entitlements_file=None,
+echo ^)
 ) > "%SPEC_FILE%"
 echo ✅ Spec-Datei erstellt: %SPEC_FILE%
 
@@ -352,6 +375,7 @@ REM Erstelle Release-Ordner mit zusätzlichen Dateien
 echo 📦 Erstelle Release-Paket...
 if not exist "release" mkdir release
 copy "dist\%PROJECT_NAME%.exe" "release\"
+if exist "dist\%PROJECT_NAME%_Console.exe" copy "dist\%PROJECT_NAME%_Console.exe" "release\"
 if exist "README.md" copy "README.md" "release\"
 if exist "LICENSE" copy "LICENSE" "release\"
 if exist "UPDATE_v2.4_ZUSAMMENFASSUNG.md" copy "UPDATE_v2.4_ZUSAMMENFASSUNG.md" "release\"
@@ -364,12 +388,16 @@ echo ==========================================
 echo.
 echo 🚀 SCHNELLSTART:
 echo    1. Doppelklick auf %PROJECT_NAME%.exe
-echo    2. Wähle GUI-Modus (Tkinter oder Streamlit^)
+echo    2. Die Desktop-GUI startet automatisch
 echo    3. Wähle Saison und Verein
 echo    4. Klicke "Daten laden" oder "Alle Daten laden"
 echo    5. Export wird automatisch erstellt
 echo.
-echo 📋 SYSTEMANFORDERUNGEN:
+echo � ALTERNATIVE VERSIONEN:
+echo    - %PROJECT_NAME%.exe: Desktop-GUI (empfohlen^)
+echo    - %PROJECT_NAME%_Console.exe: Mit Konsole für Debug
+echo.
+echo �📋 SYSTEMANFORDERUNGEN:
 echo    - Windows 7/8/10/11
 echo    - Mindestens 4 GB RAM
 echo    - Internetverbindung für Scraping
@@ -377,6 +405,7 @@ echo.
 echo 🔧 PROBLEMBEHANDLUNG:
 echo    - Bei Antivirus-Warnung: Datei als sicher markieren
 echo    - Bei Startproblemen: Als Administrator ausführen
+echo    - Bei GUI-Problemen: Konsolen-Version verwenden
 echo    - Support: GitHub Repository
 echo.
 echo 📅 Version: %VERSION%
